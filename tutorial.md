@@ -23,12 +23,12 @@ It follows a MVC (model/view/controller) structure.
 
 There is a server.js file, and directories for config, models, public files used by the client side, and routes:
 
-+--server.js
-+--package.json
-+--/config
-|  +--config.json
-|  +--passport.js
-|  +--/middleware
++--server.js  
++--package.json  
++--/config  
+|  +--config.json  
+|  +--passport.js  
+|  +--/middleware  
 |     +--isAuthenticated.js
 +--/models
 |  +--index.js
