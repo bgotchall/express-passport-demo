@@ -29,23 +29,23 @@ There is a server.js file, and directories for config, models, public files used
 |  +--config.json  
 |  +--passport.js  
 |  +--/middleware  
-|     +--isAuthenticated.js
-+--/models
-|  +--index.js
-|  +--user.js
-+--/public
-|  +--login.html
-|  +--members.html
-|  +--signup.html
-|  /js
-|    +--login.js
-|    +--members.js
-|    +--signup.js
-|  /stylesheets
-|    +--style.css
-+--/routes
-   +--api-routes.js
-   +--html-routes.js
+|     +--isAuthenticated.js  
++--/models  
+|  +--index.js  
+|  +--user.js  
++--/public  
+|  +--login.html  
+|  +--members.html  
+|  +--signup.html  
+|  /js  
+|    +--login.js  
+|    +--members.js  
+|    +--signup.js  
+|  /stylesheets  
+|    +--style.css  
++--/routes  
+   +--api-routes.js  
+   +--html-routes.js  
 
 
 The server.js file sets up a bunch of things, then starts an express server instance.  It requires modules the application will need: express (a common web application framework) and express-session which is used for logins. The server.js file pulls in the contents of the /models directory, which will define the database structures used.  It also pulls in the api and html route files in /routes.  It configures the express session.  
