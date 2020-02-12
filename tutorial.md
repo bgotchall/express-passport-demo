@@ -26,7 +26,7 @@ There is a server.js file, and directories for config, models, public files used
 ```+--server.js  
 +--package.json  
 +--/config  
-|     +--config.json  
+|  +--config.json  
 |  +--passport.js  
 |  +--/middleware  
 |     +--isAuthenticated.js  
