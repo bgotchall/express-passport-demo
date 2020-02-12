@@ -50,7 +50,7 @@ The server.js file sets up a bunch of things, then starts an express server inst
 server.js requires (pulls in) the index.js file.  This in turn requires the config.json file which is just a datafile with environment variables which must be different depending on whether you are in developement or deployed (or testing, etc).  index.js also sets up sequalize, including reading in every model file (just user.js).
 
 
-The last lines actually run something.  The sequelize "sync" method initializes the SQL database if needed and once that is done, the express server is started on port 8080.  The server will watch that port and take actions, recieving and sending data to the browser requests.
+The last lines actually run something.  The sequelize "sync" method initializes the SQL database if needed and once that is done, the express server is started on port 8080.  The server will watch that port and take actions, receiving and sending data to the browser requests.
 
 
 Now a browser needs to access the "/" route on the client side.  The api-routes.js and html-routes.js files contain the route functions that the client can access, mostly by the client side javascript calls. 
