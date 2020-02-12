@@ -9,21 +9,18 @@ The application is a node.js server side app.  It uses various other libraries p
 
 **mysqql2, sequelize**: interfaces to a mySQL database to store server side data.  
 
-**express**: to run a server and handler routing.  
+**express**: to run a server and handle routing.  
 
 **passport, passport-local**: a library to handle the login/user mechanism.  Passport has many "strategies" depending on what you are trying to do, including ways to log in to and access data from many third parties like Facebook, Twitter, Spotify etc.  Here we are using "local"  
 
 **express-session, bycryptjs**: security helpers.  
 
-
-
 The application starts with running "server.js"
 
-It follows a MVC (model/view/controller) structure.
+It follows a MVC (model/view/controller) structure.  There is a server.js file, and directories for config, models, public files used by the client side, and routes:
 
-There is a server.js file, and directories for config, models, public files used by the client side, and routes:
-
-```+--server.js  
+```
++--server.js  
 +--package.json  
 +--/config  
 |  +--config.json  
