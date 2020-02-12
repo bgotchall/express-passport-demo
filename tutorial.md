@@ -57,7 +57,7 @@ Now a browser needs to access the "/" route on the client side.  The api-routes.
 
  The "/" default route checks to see if a user is logged in, and if so goes the member page.  Else it is redirected to the signup.html page.
 
- That signup.html page contains a simple form for email and password (and a link to bypass and login instead).  signup.html links to js/signup.js which handles the form actions.  The submitted info is checked and cleaned up and finally a post route is invoked to the /api/signup route.  
+ That signup.html page contains a simple form for email and password (and a link to bypass and login instead).  signup.html links to js/signup.js which handles the form actions.  The submitted info is checked and cleaned up and finally a POST route is invoked to the /api/signup route.  
 
  The api-routes.js file has that route.  It takes the data (email, password) and creates a record in the database.  If that is sucess, it redirects to the /api/login route.  If it is not successful, for instance if the email is already in the database, it returns an error.
 
@@ -65,7 +65,7 @@ Now a browser needs to access the "/" route on the client side.  The api-routes.
 
  login.html  uses login.js.  It contains a simple form asking for email and password.  login.js does some cleaning and checking, and invokes a POST to the /api/login route.
 
- The api-routes.js file has that route.  It uses the middleware callback passport.authenticate("local) function to check to see if they are authenticated with the supplied info.  If so, the user info is returned and the client side makes a new call to the /members route.  If not, an error is returned to the client.
+ The api-routes.js file has that route.  It uses the middleware callback passport.authenticate("local") function to check to see if they are authenticated with the supplied info.  If so, the user info is returned and the client side makes a new call to the /members route.  If not, an error is returned to the client.
 
  if the /members route is called, the members.html file is displayed.  The /members route checks the "isAuthenticated" callback middleware to ensure the user is logged in (otherwise just typing hostname/members would bypass your "security").  
 
