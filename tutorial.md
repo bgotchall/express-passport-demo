@@ -7,10 +7,14 @@ The application itself is a demonstration of extending express with a security/l
 
 The application is a node.js server side app.  It uses various other libraries pulled in via NPM including:
 
-**mysqql2, sequelize**: interfaces to a mySQL database to store server side data.
-**express**: to run a server and handler routing.
-**passport, passport-local**: a library to handle the login/user mechanism.  Passport has many "strategies" depending on what you are trying to do, including ways to log in to and access data from many third parties like Facebook, Twitter, Spotify etc.  Here we are using "local"
-**express-session, bycryptjs**: security helpers.
+**mysqql2, sequelize**: interfaces to a mySQL database to store server side data.  
+
+**express**: to run a server and handler routing.  
+
+**passport, passport-local**: a library to handle the login/user mechanism.  Passport has many "strategies" depending on what you are trying to do, including ways to log in to and access data from many third parties like Facebook, Twitter, Spotify etc.  Here we are using "local"  
+
+**express-session, bycryptjs**: security helpers.  
+
 
 
 The application starts with running "server.js"
